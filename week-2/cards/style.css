@@ -38,13 +38,14 @@ button{
 .wrapper{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .card{
     max-width: 300px;
     border-radius:  4px;
-    margin: 2rem auto;
+    margin: 2rem;
     box-sizing: border-box;
     box-shadow: 3px 3px 10px rgb(0 0 0 / 0.2);
 
@@ -79,9 +80,24 @@ button{
     background-color: var(--heading-hover-color);
 }
 
-.card_no_icons .container_bottom {
+.card_only_buttons .container_bottom {
     justify-content: flex-start;
 }
+
+.card_only_icons .container_bottom{
+    justify-content: flex-end;
+}
+
+.card_basic .description,
+.card_only_buttons .description,
+.card_only_icons .description{
+    padding-top: 0;
+}
+
+.card_horizontal .container_bottom{
+    padding: 8px;
+}
+
 
 img{
     border-top-left-radius: 4px;
@@ -104,11 +120,13 @@ img{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;    
 }
 
 
-.action_text button{
+.action_buttons button{
     font-weight: bold;
     padding: 8px;
     text-decoration: initial;
@@ -116,13 +134,13 @@ img{
     font-size: 100%;
 }
 
-.action_text button:hover{
+.action_buttons button:hover{
     background-color: var(--text-hover-bg);
     cursor: pointer;
     border-radius: 4px;
 }
 
-.action_icon{
+.action_icons{
     margin-left: auto;
 }
 
