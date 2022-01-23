@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html{
+    font-size: 85%;
+}
+
+:root{
+    --subheading-color: #808080;
+    --icon-hover-bg: #F0F0F0;
+    --text-hover-bg: #D9D7F1;
+    --button-text-color: #6200ee;
+    --heading-hover-color: #F8F8F8;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+}
+
+h4{
+    color: var(--subheading-color);
+    letter-spacing: .025em;
+
+}
+
+button{
+    text-decoration: none;
+    background-color: #fff;
+    border: none;
+}
+
+.card{
+    max-width: 300px;
+    border-radius:  4px;
+    margin: auto;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 10px rgb(0 0 0 / 0.2);
+}
+
+ /* TOP CONTAINER */
+
+.container_top{
+    display: flex;
+    align-items: center;
+    
+}
+
+.container_top:hover{
+    cursor: pointer;
+    background-color: var(--heading-hover-color);
+}
+
+img{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.description{
+    padding: 1rem
+}
+
+/* BOTTOM CONTAINER */
+
+.container_bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 8px;
+}
+
+
+.action_text button{
+    font-weight: bold;
+    padding: 8px;
+    text-decoration: initial;
+    color: var(--button-text-color);
+    font-size: 100%;
+}
+
+.action_text button:hover{
+    background-color: var(--text-hover-bg);
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.action_icon{
+    margin-left: auto;
+}
+
+.icon{
+    padding: 8px;
+}
+
+.icon:hover{
+    background-color: var(--icon-hover-bg);
+    border-radius: 100%;
+    cursor: pointer;
+}
